@@ -1,14 +1,24 @@
 <html>
+<head><title>Nederlands</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" type="image/x-icon" href="snp.ico"></head>
+<style>
+p {
+ margin: 20px 20px 20px 20px
+  }
+</style>
 <body>
-Beste medelanders,<p>
-Of u nu net in Schotland bent aangekomen, hier al jaren woont, of zich al generaties lang Schots voelt, u bent hier welkom!<p>
-U woont hier, werkt hier, studeert hier, betaalt belasting hier, voedt hier uw kinderen op en hopelijk wordt u hier oud. Juist hierom heeft u het volste recht om gehoord te worden en om te stemmen op de kandidaat en partij die uw behoeften en ambities vertegenwoordigen.<p>
-Wij moedigen u aan om zich te laten registreren als kiezer, ongeacht uw voorkeur: <a href="https://www.lothian-vjb.gov.uk/electoral">https://www.lothian-vjb.gov.uk/electoral</a><p>
-De Scottish National Party (SNP) wil een eerlijk, inclusief en duurzaam Schotland. We beantwoorden graag al uw vragen op <span id="email"></span><p>
-Uw <span id="county">local"</span> SNP team<p>
+<p>Beste medelanders,</p>
+<p>Of u nu net in Schotland bent aangekomen, hier al jaren woont, of zich al generaties lang Schots voelt, u bent hier welkom!</p>
+<p>U woont hier, werkt hier, studeert hier, betaalt hier belasting, voedt hier uw kinderen op en hopelijk wordt u hier oud. Juist hierom heeft u het volste recht om gehoord te worden en om te stemmen op de kandidaat en partij die uw behoeften en ambities vertegenwoordigen.</p>
+<p>Wij moedigen u aan om zich te laten registreren als kiezer, ongeacht uw voorkeur: <a href="https://www.lothian-vjb.gov.uk/electoral">https://www.lothian-vjb.gov.uk/electoral</a></p>
+<p>De Scottish National Party (SNP) wil een eerlijk, inclusief en duurzaam Schotland. We beantwoorden graag al uw vragen op <span id="email"></span><p>
+<p>Uw <span id="county">local"</span> SNP team<p>
 <script>
 const urlObj = new URL( window.location.href );
 let ourCode = urlObj.searchParams.get('ccc');
+let ourHost = urlObj.hostname;
+let ourDom  = ourHost.replace(/^(.+?)\./, "");
 switch(ourCode) {
   case "ab": locality = "Argyll & Bute"; break;
   case "ac": locality = "Aberdeen City"; break;
@@ -42,9 +52,10 @@ switch(ourCode) {
   case "wl": locality = "West Lothian"; break;
   default: locality = "local";
 }
-let mailTag = '<a href="mailto:' + ourCode + 'ccc@1snp.org?subject=Council elections 2022">' + ourCode + 'ccc@1snp.org</a>';
 document.getElementById("county").innerHTML = locality;
+let mailTag = '<a href="mailto:' + ourCode + '-ccc@' + ourDom +  '?subject=Council elections 2022">' + ourCode + '-ccc@' + ourDom + '</a>';
 document.getElementById("email").innerHTML = mailTag;
 </script>
 </body>
 </html>
+
