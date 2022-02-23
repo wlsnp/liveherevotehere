@@ -7,54 +7,67 @@ p {
  margin: 20px 20px 20px 20px
   }
 </style>
+<style>
+  .bot3cm {
+     margin-bottom: 3cm;
+  }
+</style>
 <body>
 <p>Beste medelanders,</p>
 <p>Of u nu net in Schotland bent aangekomen, hier al jaren woont, of zich al generaties lang Schots voelt, u bent hier welkom!</p>
 <p>U woont hier, werkt hier, studeert hier, betaalt hier belasting, voedt hier uw kinderen op en hopelijk wordt u hier oud. Juist hierom heeft u het volste recht om gehoord te worden en om te stemmen op de kandidaat en partij die uw behoeften en ambities vertegenwoordigen.</p>
-<p>Wij moedigen u aan om zich te laten registreren als kiezer, ongeacht uw voorkeur: <a href="https://www.lothian-vjb.gov.uk/electoral">https://www.lothian-vjb.gov.uk/electoral</a></p>
+<p>Wij moedigen u aan om zich te laten registreren als kiezer, ongeacht uw voorkeur: <span id="votereg"></span><p>
 <p>De Scottish National Party (SNP) wil een eerlijk, inclusief en duurzaam Schotland. We beantwoorden graag al uw vragen op <span id="email"></span><p>
 <p>Uw <span id="county">local"</span> SNP team<p>
+<p class="bot3cm"></p>
+<p><small><a href="https://www.snp.org/">© 2022 SNP</a></small></p>
 <script>
 const urlObj = new URL( window.location.href );
 let ourCode = urlObj.searchParams.get('ccc');
 let ourHost = urlObj.hostname;
 let ourDom  = ourHost.replace(/^(.+?)\./, "");
+let myPath  = urlObj.pathname;
+let ourLang = myPath.substr(1,2);
 switch(ourCode) {
-  case "ab": locality = "Argyll & Bute"; break;
-  case "ac": locality = "Aberdeen City"; break;
-  case "an": locality = "Angus"; break;
-  case "as": locality = "Aberdeenshire"; break;
-  case "cm": locality = "Clackmannanshire"; break;
-  case "dg": locality = "Dumfries & Galloway"; break;
-  case "ea": locality = "East Ayrshire"; break;
-  case "ec": locality = "Edinburgh City"; break;
-  case "ed": locality = "East Dumbartonshire"; break;
-  case "el": locality = "East Lothian"; break;
-  case "er": locality = "East Renfrewshire"; break;
-  case "fi": locality = "Fife"; break;
-  case "fk": locality = "Falkirk"; break;
-  case "gc": locality = "Glasgow City"; break;
-  case "hi": locality = "Highland"; break;
-  case "ic": locality = "Inverclyde"; break;
-  case "ml": locality = "Midlothian"; break;
-  case "mo": locality = "Moray"; break;
-  case "na": locality = "North Ayrshire"; break;
-  case "nl": locality = "North Lanarkshire"; break;
-  case "ok": locality = "Orkney"; break;
-  case "pk": locality = "Perth & Kinross"; break;
-  case "rf": locality = "Renfrewshire"; break;
-  case "sb": locality = "Scottish Borders"; break;
-  case "si": locality = "Shetland Islands"; break;
-  case "sa": locality = "South Ayrshire"; break;
-  case "sl": locality = "South Lanarkshire"; break;
-  case "wd": locality = "West Dumbartonshire"; break;
-  case "wi": locality = "Western Isles"; break;
-  case "wl": locality = "West Lothian"; break;
-  default: locality = "local";
+  case "ab": locality = "Argyll & Bute"; register = "https://www.saa.gov.uk/dab-vjb/electoral-registration/"; break;
+  case "ac": locality = "Aberdeen City"; register = "https://www.grampian-vjb.gov.uk/electoral-register/"; break;
+  case "an": locality = "Angus"; register = "https://www.tayside-vjb.gov.uk/electoral-registration/"; break;
+  case "as": locality = "Aberdeenshire"; register = "https://www.grampian-vjb.gov.uk/electoral-register/"; break;
+  case "cm": locality = "Clackmannanshire"; register = "https://www.saa.gov.uk/central/electoral-registration-postal-proxy-votes/"; break;
+  case "dc": locality = "Dundee City"; register = "https://www.tayside-vjb.gov.uk/electoral-registration/"; break;
+  case "dg": locality = "Dumfries & Galloway"; register = "https://www.dumgal.gov.uk/article/15146/Register-to-vote"; break;
+  case "ea": locality = "East Ayrshire"; register = "http://www.ayrshire-vjb.gov.uk/er.html"; break;
+  case "ec": locality = "Edinburgh City"; register = "https://www.lothian-vjb.gov.uk/electoral"; break;
+  case "ed": locality = "East Dunbartonshire"; register = "https://www.saa.gov.uk/dab-vjb/electoral-registration/"; break;
+  case "el": locality = "East Lothian"; register = "https://www.lothian-vjb.gov.uk/electoral"; break;
+  case "er": locality = "East Renfrewshire"; register = "https://www.renfrewshire-vjb.gov.uk/electoral-forms"; break;
+  case "fi": locality = "Fife"; register = "https://www.fife.gov.uk/kb/docs/articles/council-and-democracy/elections2/register-to-vote"; break;
+  case "fk": locality = "Falkirk"; register = "https://www.saa.gov.uk/central/electoral-registration-postal-proxy-votes/"; break;
+  case "gc": locality = "Glasgow City"; register = "https://www.glasgow.gov.uk/registertovote"; break;
+  case "hi": locality = "Highland"; register = "https://www.saa.gov.uk/h-wi-vjb/the-electoral-register/"; break;
+  case "ic": locality = "Inverclyde"; register = "https://www.renfrewshire-vjb.gov.uk/electoral-forms"; break;
+  case "ml": locality = "Midlothian"; register = "https://www.lothian-vjb.gov.uk/electoral"; break;
+  case "mo": locality = "Moray"; register = "https://www.grampian-vjb.gov.uk/electoral-register/"; break;
+  case "na": locality = "North Ayrshire"; register = "http://www.ayrshire-vjb.gov.uk/er.html"; break;
+  case "nl": locality = "North Lanarkshire"; register = "https://www.lanarkshire-vjb.gov.uk/lvjb/info/3/electoral_registration"; break;
+  case "ok": locality = "Orkney"; register = "http://www.orkney-shetland-vjb.co.uk/ELECTORAL.html"; break;
+  case "pk": locality = "Perth & Kinross"; register = "https://www.tayside-vjb.gov.uk/electoral-registration/"; break;
+  case "rf": locality = "Renfrewshire"; register = "https://www.renfrewshire-vjb.gov.uk/electoral-forms"; break;
+  case "sb": locality = "Scottish Borders"; register = "https://www.scotborders.gov.uk/info/20057/elections_and_voting/417/register_to_vote"; break;
+  case "si": locality = "Shetland Islands"; register = "http://www.orkney-shetland-vjb.co.uk/ELECTORAL.html"; break;
+  case "sa": locality = "South Ayrshire"; register = "http://www.ayrshire-vjb.gov.uk/er.html"; break;
+  case "sl": locality = "South Lanarkshire"; register = "https://www.lanarkshire-vjb.gov.uk/lvjb/info/3/electoral_registration"; break;
+  case "st": locality = "Stirling"; register = "https://www.saa.gov.uk/central/electoral-registration-postal-proxy-votes/"; break;
+  case "wd": locality = "West Dunbartonshire"; register = "https://www.saa.gov.uk/dab-vjb/electoral-registration/"; break;
+  case "wi": locality = "Western Isles"; register = "https://www.saa.gov.uk/h-wi-vjb/the-electoral-register/"; break;
+  case "wl": locality = "West Lothian"; register = "https://www.lothian-vjb.gov.uk/electoral"; break;
+  default: locality = "local"; register = "https://www.gov.uk/register-to-vote";
 }
 document.getElementById("county").innerHTML = locality;
-let mailTag = '<a href="mailto:' + ourCode + '-ccc@' + ourDom +  '?subject=Council elections 2022">' + ourCode + '-ccc@' + ourDom + '</a>';
+let mailTag = '<a href="mailto:' + ourCode + '-ccc@' + ourDom +  '?subject=Council elections 2022 ' + ourLang + '">' + ourCode + '-ccc@' + ourDom + '</a>';
+let regiTag = '<a href="' + register + '">' + register + '</a>';
 document.getElementById("email").innerHTML = mailTag;
+document.getElementById("votereg").innerHTML = regiTag;
 </script>
 </body>
 </html>
