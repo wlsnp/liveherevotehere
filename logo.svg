@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="110.78841mm"
-   height="30.14122mm"
-   viewBox="0 0 110.78842 30.141219"
+   width="119.08159mm"
+   height="38.282623mm"
+   viewBox="0 0 119.0816 38.282622"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="liveherevoteherefilled.svg"
+   sodipodi:docname="liveherevotehere.svg"
    inkscape:export-filename="Z:\Branch\liveherevoteheretight.png"
    inkscape:export-xdpi="44.251209"
    inkscape:export-ydpi="44.251209"
@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="3.1108586"
-     inkscape:cx="162.49533"
-     inkscape:cy="75.541846"
+     inkscape:cx="238.68009"
+     inkscape:cy="106.08004"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
      inkscape:window-x="-8"
@@ -43,11 +43,11 @@
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
-       position="110.71585,12.30606"
+       position="114.2502,17.253316"
        orientation="1,0"
        id="guide8055" />
     <sodipodi:guide
-       position="0.042525314,22.873715"
+       position="3.5768788,27.820971"
        orientation="1,0"
        id="guide8057" />
   </sodipodi:namedview>
@@ -114,10 +114,24 @@
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
-     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="frame"
+     transform="translate(3.5343534,3.1941471)">
+    <rect
+       style="fill:#f9f9f9;stroke:#000000;stroke-width:0.264583"
+       id="rect924"
+       width="118.81701"
+       height="38.01804"
+       x="-3.4020619"
+       y="-3.0618556" />
+  </g>
+  <g
+     inkscape:label="graphic"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-49.984658,-5.5672216)">
+     transform="translate(-46.450305,-2.3730745)"
+     style="display:inline">
     <g
        id="layer1-3"
        inkscape:label="Layer 1"
@@ -210,16 +224,16 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12.0123px;line-height:1.25;font-family:sans-serif;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.300306"
-       x="44.478443"
-       y="14.351181"
+       style="font-style:normal;font-weight:normal;font-size:9.38225px;line-height:1.25;font-family:sans-serif;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.234554"
+       x="48.454708"
+       y="15.707064"
        id="text2387"
-       transform="scale(1.1091422,0.90159765)"><tspan
+       transform="scale(1.211534,0.82539985)"><tspan
          sodipodi:role="line"
          id="tspan2385"
-         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:12.0123px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke-width:0.300306"
-         x="44.478443"
-         y="14.351181">Live here? Vote here!</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9.38225px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke-width:0.234554"
+         x="48.454708"
+         y="15.707064">Live here? Vote here!</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.395013px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 62.301163,22.174922 -0.02261,5.127525 7.345405,3.187986 7.045969,-2.959413 0.07954,-5.766713 z"
@@ -234,7 +248,9 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="hoose">
+     inkscape:label="hoose"
+     style="display:inline"
+     transform="translate(3.5343534,3.1941471)">
     <g
        id="g101"
        transform="matrix(0.02991303,0,0,0.02561431,-34.834288,4.7576184)">
@@ -294,7 +310,7 @@
        id="path213"
        transform="translate(-49.984657,-5.5672215)" />
     <path
-       style="fill:url(#linearGradient8888);stroke-width:0.170103;fill-opacity:1"
+       style="fill:url(#linearGradient8888);fill-opacity:1;stroke-width:0.170103"
        d="m 65.852085,28.877704 -3.354222,-1.477899 -0.0053,-2.594073 -0.0053,-2.594072 h 3.40206 3.402062 v 4.082475 c 0,2.24536 -0.01914,4.077748 -0.04253,4.071971 -0.02339,-0.0058 -1.551926,-0.675557 -3.396748,-1.488402 z m 2.248552,-3.349033 c 0,-1.738394 -0.01022,-1.786122 -0.382732,-1.787561 -0.210502,-8.2e-4 -0.7846,-0.04975 -1.275773,-0.108746 l -0.893041,-0.107266 v 1.542551 1.542551 l 0.978093,0.275886 c 0.53795,0.151737 1.054638,0.304219 1.148195,0.338847 0.09356,0.03463 0.227513,0.06901 0.297681,0.07639 0.07017,0.0074 0.127577,-0.790308 0.127577,-1.772652 z m -3.231959,-0.658156 v -1.42362 l -0.637886,-0.105436 c -1.273781,-0.210543 -1.233248,-0.251126 -1.233248,1.234747 v 1.343927 l 0.637887,0.16942 c 1.260683,0.334833 1.233247,0.361952 1.233247,-1.219038 z"
        id="path252"
        transform="translate(-49.984657,-5.5672215)" />
