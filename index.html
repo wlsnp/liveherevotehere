@@ -7,17 +7,17 @@
 <style> h3 { text-align: center;  } </style>
 <body><h3>
 <img src="logo.svg" style="width:100%; max-width:500px;"/><p>
-<span id="esTag"></span><br>
-<span id="nlTag"></span><br>
 <span id="deTag"></span><br>
+<span id="esTag"></span><br>
 <span id="frTag"></span><br>
+<span id="nlTag"></span><br>
 </h3>
 <script>
 const urlObj = new URL( window.location.href );
 let ourCode = urlObj.searchParams.get('ccc');
-let esLink = '<a href="es.html?ccc=' + ourCode + '">Español</a>';    document.getElementById("esTag").innerHTML = esLink;
-let nlLink = '<a href="nl.html?ccc=' + ourCode + '">Nederlands</a>'; document.getElementById("nlTag").innerHTML = nlLink;
 let deLink = '<a href="de.html?ccc=' + ourCode + '">Deutsch</a>';    document.getElementById("deTag").innerHTML = deLink;
+let esLink = '<a href="es.html?ccc=' + ourCode + '">Español</a>';    document.getElementById("esTag").innerHTML = esLink;
 let frLink = '<a href="fr.html?ccc=' + ourCode + '">Français</a>';   document.getElementById("frTag").innerHTML = frLink;
+let nlLink = '<a href="nl.html?ccc=' + ourCode + '">Nederlands</a>'; document.getElementById("nlTag").innerHTML = nlLink;
 </script>
 </body></html>
