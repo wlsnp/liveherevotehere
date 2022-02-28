@@ -1,5 +1,5 @@
 <!-- (C) 2022 Scottish National Party -->
-<!-- Thanks to Martha for a great title -->
+<!-- Thanks to SNP Edinburgh East for a great title -->
 <html><head><title>Live here? Vote here!</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,15 @@
 <span id="afTag"></span><br>
 <span id="nlTag"></span><br>
 <span id="frTag"></span><br>
+<span id="ptTag"></span><br>
 </h3>
+<p style="text-align:center">The SNP organised a 'Live here? Vote here' event available on <a href="https://youtu.be/Ku49jghIsuk">YouTube<a></p>
 <script>
 const urlObj = new URL( window.location.href );
 let ourCode = urlObj.searchParams.get('ccc');
 let afLink = '<a href="af.html?ccc=' + ourCode + '">Afrikaans</a>';  document.getElementById("afTag").innerHTML = afLink;
 let nlLink = '<a href="nl.html?ccc=' + ourCode + '">Nederlands</a>'; document.getElementById("nlTag").innerHTML = nlLink;
 let frLink = '<a href="fr.html?ccc=' + ourCode + '">Français</a>';   document.getElementById("frTag").innerHTML = frLink;
+let ptLink = '<a href="pt.html?ccc=' + ourCode + '">Português</a>';  document.getElementById("ptTag").innerHTML = ptLink;
 </script>
 </body></html>
