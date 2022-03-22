@@ -14,11 +14,12 @@ table.lingo td { border: 0px solid white; text-align: center; font-weight: bold;
 <p><table class="lingo">
 <tr><td colspan="3"><img src="logo.svg" style="width:100%; max-width:500px; align:center"/></td></tr>
 <tr><td><span id="afTag"></span></td><td><span id="zsTag"></span></td><td><span id="ztTag"></span></td></tr>
-<tr><td><span id="nlTag"></span></td><td><span id="frTag"></span></td><td><span id="deTag"></span></td></tr>
-<tr><td><span id="haTag"></span></td><td><span id="igTag"></span></td><td><span id="noTag"></span></td></tr>
-<tr><td><span id="poTag"></span></td><td><span id="ptTag"></span></td><td><span id="esTag"></span></td></tr>
-<tr><td><span id="urTag"></span></td><td><span id="yoTag"></span></td><td></td></tr>
+<tr><td><span id="dkTag"></span></td><td><span id="nlTag"></span></td><td><span id="frTag"></span></td></tr>
+<tr><td><span id="deTag"></span></td><td><span id="haTag"></span></td><td><span id="igTag"></span></td></tr>
+<tr><td><span id="noTag"></span></td><td><span id="poTag"></span></td><td><span id="ptTag"></span></td></tr>
+<tr><td><span id="esTag"></span></td><td><span id="urTag"></span></td><td><span id="yoTag"></span></td></tr>
 </table></p>
+<span id="dkTag">
 <p style="text-align:center">The SNP organised a 'Live here? Vote here' event available on <a href="https://youtu.be/Ku49jghIsuk">YouTube<a></p>
 <script>
 const urlObj = new URL( window.location.href );
@@ -26,6 +27,7 @@ let ourCode = urlObj.searchParams.get('ccc');
 let afLink = '<a href="af.html?ccc=' + ourCode + '">Afrikaans</a>';  document.getElementById("afTag").innerHTML = afLink;
 let zsLink = '<a href="zs.html?ccc=' + ourCode + '">简体中文</a>';   document.getElementById("zsTag").innerHTML = zsLink;
 let ztLink = '<a href="zt.html?ccc=' + ourCode + '">繁體中文</a>';   document.getElementById("ztTag").innerHTML = ztLink;
+let dkLink = '<a href="dk.html?ccc=' + ourCode + '">Dansk</a>';      document.getElementById("dkTag").innerHTML = dkLink;
 let nlLink = '<a href="nl.html?ccc=' + ourCode + '">Nederlands</a>'; document.getElementById("nlTag").innerHTML = nlLink;
 let frLink = '<a href="fr.html?ccc=' + ourCode + '">Français</a>';   document.getElementById("frTag").innerHTML = frLink;
 let deLink = '<a href="de.html?ccc=' + ourCode + '">Deutsch</a>';    document.getElementById("deTag").innerHTML = deLink;
